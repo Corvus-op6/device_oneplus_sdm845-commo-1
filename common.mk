@@ -102,6 +102,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.devicesettings.rc \
     init.qcom.rc \
+    init.safailnet.rc \
     init.recovery.qcom.rc \
     init.smartcharging.rc \
     ueventd.qcom.rc
