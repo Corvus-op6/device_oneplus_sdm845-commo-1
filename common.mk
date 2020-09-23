@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
 # Inherit packages from vendor/addons/oneplus/camera
-$(call inherit-product-if-exists, vendor/addons/oneplus/camera/config.mk)
+#$(call inherit-product-if-exists, vendor/addons/oneplus/camera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -86,10 +86,10 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera HIDL
-PRODUCT_PACKAGES += \
-    vendor.oneplus.camera.CameraHIDL@1.0 \
-    vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
-    vendor.oneplus.camera.CameraHIDL-V1.0-java
+#PRODUCT_PACKAGES += \
+#    vendor.oneplus.camera.CameraHIDL@1.0 \
+#    vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
+#    vendor.oneplus.camera.CameraHIDL-V1.0-java
 
 # Gcam
 PRODUCT_PACKAGES += \
@@ -101,7 +101,6 @@ PRODUCT_COPY_FILES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.devicesettings.rc \
-    init.opcamera.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.smartcharging.rc \
