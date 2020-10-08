@@ -28,12 +28,12 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-corvus
 
-PRODUCT_PACKAGES += \
-    OnePlusIconShapeCircleOverlay \
-    OnePlusIconShapeRoundedRectOverlay \
-    OnePlusIconShapeSquareOverlay \
-    OnePlusIconShapeSquircleOverlay \
-    OnePlusIconShapeTeardropOverlay
+#PRODUCT_PACKAGES += \
+#    OnePlusIconShapeCircleOverlay \
+#    OnePlusIconShapeRoundedRectOverlay \
+#    OnePlusIconShapeSquareOverlay \
+#    OnePlusIconShapeSquircleOverlay \
+#    OnePlusIconShapeTeardropOverlay
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
@@ -112,8 +112,8 @@ PRODUCT_PACKAGES += \
     DeviceSettings
 
 # OPScreenRecorder
-PRODUCT_PACKAGES += \
-    OPScreenRecorder
+#PRODUCT_PACKAGES += \
+#    OPScreenRecorder
 
 # Display
 PRODUCT_PACKAGES += \
@@ -141,9 +141,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service.oneplus_sdm845
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -165,8 +162,8 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpnfc@1.0:64
 
 # OnePlus-Mock
-PRODUCT_PACKAGES += oneplus-mock
-PRODUCT_BOOT_JARS += oneplus-mock
+#PRODUCT_PACKAGES += oneplus-mock
+#PRODUCT_BOOT_JARS += oneplus-mock
 
 # Power
 PRODUCT_PACKAGES += \
@@ -230,6 +227,3 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
