@@ -127,6 +127,9 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libvulkan \
+    libcutils_shim \
+    libjson \
+    libjson.vendor \
     vendor.display.config@1.0
 
 # Display Calibration
