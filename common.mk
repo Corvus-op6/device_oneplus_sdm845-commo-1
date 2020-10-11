@@ -99,6 +99,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Gcam
 PRODUCT_PACKAGES += \
+    libcvface_api \
     GoogleCamera
 
 PRODUCT_COPY_FILES += \
