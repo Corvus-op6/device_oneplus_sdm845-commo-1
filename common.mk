@@ -257,3 +257,8 @@ PRODUCT_PACKAGES += \
 # Whitelisted app
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/system_ext/etc/permissions/privapp-permissions-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-system_ext.xml
+
+# OTA
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
